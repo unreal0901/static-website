@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/stle.css">
+ <title>Document</title>
+ <style>
+  
+#survey-form {
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 2px solid black;
+  padding: 2em;
+  background-color: black;
+  opacity: 0.77;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 15px;
+}
+
+label {
+  color: white;
+  font-style: bold;
+}
+
+#description {
+  font-size: 1.2em;
+}
+
+p {
+  color: white;
+  font-size: 1.2em;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.6em;
+  font-style: italic;
+  border-bottom: 2px solid white;
+}
+
+#name,
+#email,
+#number,
+#dropdown-list {
+  width: 100%;
+}
+
+#submit {
+  font-style: bold;
+  font-family: sans;
+  height: 3em;
+  width: 100%;
+}
+
+#submit:hover {
+  background-color: green;
+  color: white;
+}
+
+#text-area {
+  width: 100%;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/564x/e6/3c/59/e63c595dd1ad68d9699c73ffb7343d91.jpg);
+  background-color: white;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+   margin: 0;
+  padding: 0;
+}
+
+.navigation ul {
+  margin: 0;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.main-nav li {
+  padding: 0 5%;
+}
+
+.navigation a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+ 
+
+ </style>
+</head>
+
+<body>
+ <header class="main-header">
+ 
+  <nav class="navigation main-nav">
+   <ul style="margin: 0">
+    <li><a href="./index.html">HOME</a></li>
+    <li><a href="./projects.html">PROJECTS</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li><a href="./userfrom.html">USER-FORM</a></li>
+   </ul>
+  </nav>
+ 
+  <h1 class="initials initials-large" style=" text-align: center;
+  margin: 0;
+  font-size: 10em;
+  font-family: Shippori + Mincho;
+  font-weight: normal;
+  color: white;
+  text-shadow: 4px 4px rgb(128, 125, 125);">A.S.R</h1>
+  <p class="quote" style=" color: white;
+  text-align: center;
+  font-size: 2.7em;
+  text-decoration: underline;
+  font-weight: bold;">"Learning new technology and coding everyday"</p>
+  <p class="fullform">-aditya singh rawat</p>
+ 
+ </header>
+ <h2 id="title">USER-FORM</h2>
+ <p id="description">Submit form for better experience</p>
+ <form id="survey-form">
+
+  <label id="name-label" for="name">Enter Your Name</label><br>
+  <input id="name" placeholder="type-name" type="text" name="name" required><br><br>
+
+  <label id="email-label" for="email">Enter Email</label><br>
+  <input id="email" placeholder="type-email" type="email" name="number" required><br><br>
+
+  <label id="number-label" for="age">Enter your Age</label><br>
+  <input id="number" placeholder="enter age" type="number" name="number" min="4" max="21"><br><br>
+
+  <label for="dropdown-list">select your fav language</label><br>
+  <input placeholder="SELECT YOUR FAVORITE LANGUAGE" id="dropdown-list" list="dropdown">
+  <datalist id="dropdown">
+   <option value="c++">
+   <option value="python">
+   <option value="php">
+   <option value="java">
+   <option value="js">
+  </datalist>
+  <br><br>
+
+  <p>Will you like to review!!</p>
+  <input id="radio1" type="radio" name="radio" value="definitely">
+  <label for="radio1">Definitely</label><br>
+  <input id="radio2" type="radio" name="radio" value="maybe">
+  <label for="radio2">maybe</label><br>
+  <input id="radio3" type="radio" name="radio" value="not-sure">
+  <label for="radio3">not-sure</label><br>
+
+  <p>select your favourite IDE</p>
+  <input id="checkbox1" type="checkbox" name="checkbox" value="front-end-projects">
+  <label for="checkbox1">VScode</label><br>
+  <input id="checkbox2" type="checkbox" name="checkbox" value="machine-learning">
+  <label for="checkbox2">sublime</label><br>
+  <input id="checkbox3" type="checkbox" name="checkbox" value="full-web-devlopment">
+  <label for="checkbox3">eclipse</label><br>
+  <br><br>
+  <label for="text-area">ASK ANY QUESTION</label>
+  <textarea id="text-area" rows="10" placeholder="ask your doubt"></textarea>
+  <br>
+
+  <input id="submit" type="submit" value="submit">
+ </form>
+
+</body>
+
+</html>
